@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{356C66D8-0B6A-4090-BAD4-217BA4C8D3E1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EconRentCar.WinForms</RootNamespace>
+    <AssemblyName>EconRentCar.WinForms</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppUserDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppUserDetail.Designer.cs">
+      <DependentUpon>AppUserDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppUserMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppUserMaster.Designer.cs">
+      <DependentUpon>AppUserMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClienteDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClienteDetail.Designer.cs">
+      <DependentUpon>ClienteDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClienteMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClienteMaster.Designer.cs">
+      <DependentUpon>ClienteMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpleadoDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpleadoDetail.Designer.cs">
+      <DependentUpon>EmpleadoDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpleadoMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpleadoMaster.Designer.cs">
+      <DependentUpon>EmpleadoMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InspeccionDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InspeccionDetail.Designer.cs">
+      <DependentUpon>InspeccionDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InspeccionMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InspeccionMaster.Designer.cs">
+      <DependentUpon>InspeccionMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarcaDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarcaDetail.Designer.cs">
+      <DependentUpon>MarcaDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarcaMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarcaMaster.Designer.cs">
+      <DependentUpon>MarcaMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModeloDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModeloDetail.Designer.cs">
+      <DependentUpon>ModeloDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModeloMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModeloMaster.Designer.cs">
+      <DependentUpon>ModeloMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RentaDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RentaDetail.Designer.cs">
+      <DependentUpon>RentaDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RentaMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RentaMaster.Designer.cs">
+      <DependentUpon>RentaMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteRentasPorFechas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteRentasPorFechas.Designer.cs">
+      <DependentUpon>ReporteRentasPorFechas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TipoCombustibleDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TipoCombustibleDetail.Designer.cs">
+      <DependentUpon>TipoCombustibleDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TipoCombustibleMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TipoCombustibleMaster.Designer.cs">
+      <DependentUpon>TipoCombustibleMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TipoVehiculoDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TipoVehiculoDetail.Designer.cs">
+      <DependentUpon>TipoVehiculoDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TipoVehiculoMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TipoVehiculoMaster.Designer.cs">
+      <DependentUpon>TipoVehiculoMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VehiculoDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehiculoDetail.Designer.cs">
+      <DependentUpon>VehiculoDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VehiculoMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehiculoMaster.Designer.cs">
+      <DependentUpon>VehiculoMaster.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AppUserDetail.resx">
+      <DependentUpon>AppUserDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppUserMaster.resx">
+      <DependentUpon>AppUserMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClienteDetail.resx">
+      <DependentUpon>ClienteDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClienteMaster.resx">
+      <DependentUpon>ClienteMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpleadoDetail.resx">
+      <DependentUpon>EmpleadoDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpleadoMaster.resx">
+      <DependentUpon>EmpleadoMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InspeccionDetail.resx">
+      <DependentUpon>InspeccionDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InspeccionMaster.resx">
+      <DependentUpon>InspeccionMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarcaDetail.resx">
+      <DependentUpon>MarcaDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarcaMaster.resx">
+      <DependentUpon>MarcaMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModeloDetail.resx">
+      <DependentUpon>ModeloDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModeloMaster.resx">
+      <DependentUpon>ModeloMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RentaDetail.resx">
+      <DependentUpon>RentaDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RentaMaster.resx">
+      <DependentUpon>RentaMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteRentasPorFechas.resx">
+      <DependentUpon>ReporteRentasPorFechas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TipoCombustibleDetail.resx">
+      <DependentUpon>TipoCombustibleDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TipoCombustibleMaster.resx">
+      <DependentUpon>TipoCombustibleMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TipoVehiculoDetail.resx">
+      <DependentUpon>TipoVehiculoDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TipoVehiculoMaster.resx">
+      <DependentUpon>TipoVehiculoMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehiculoDetail.resx">
+      <DependentUpon>VehiculoDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehiculoMaster.resx">
+      <DependentUpon>VehiculoMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EconRentCar.Core\EconRentCar.Core.csproj">
+      <Project>{e884401e-0478-45dc-be03-d7a474b01547}</Project>
+      <Name>EconRentCar.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EconRentCar.DataModel\EconRentCar.DataModel.csproj">
+      <Project>{2fafce0a-4804-49e8-819f-37e89de5ba90}</Project>
+      <Name>EconRentCar.DataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EconRentCar.Logics\EconRentCar.Logics.csproj">
+      <Project>{3e93881c-756a-4abe-aef3-7bafb8f920d6}</Project>
+      <Name>EconRentCar.Logics</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
